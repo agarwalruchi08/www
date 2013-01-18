@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Demo Application</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery-mobile.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.js"></script>
+<style type="text/css">
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;height:auto;
+padding:10px 0;
+}  
+.ui-content {
+	padding:15px 0;
+}
+
+.ui-footer{
+    background: transparent;
+    background-color: #426685;
+    background-image: -moz-linear-gradient(center top , #497093, #385671);
+}
+div img#scalaJobzLogo{
+	margin-top:1%;
+}
+div#contentDiv{
+	margin-top:50px;
+	text-align:center;
+}
+body{
+	background:url(images/background.jpeg) no-repeat;
+	overflow-y:scroll;
+}
+div#imageLogoDiv{
+	background-color: #426685;
+    background-image: -moz-linear-gradient(center top , #497093, #385671);
+    width:100%;
+    text-align:center;
+}
+label#logoComment{
+	color:white;
+	font-size:12px;
+    margin-left:120px;
+    
+}
+
+input#searchTextBox{
+	width:70%;
+	height:40px;
+	margin-left:15%;
+}
+
+span#wordFormatting{
+	font-size:18px;
+	color:blue;
+}
+div#searchDiv{
+	margin-top:50px;
+	text-align: center;
+	
+}
+div#searchButtonDiv{
+	margin-top:50px;
+	width:30%;
+	margin-left:35%;
+}
+
+.ui-btn-text{
+font-size:20px;
+}
+
+div#footerDivJobSearch .ui-btn {
+width:20%;}
+
+<!--.ui-page {
+    background-color:white;
+}-->
+</style>
+ <script>
+  
+
+    $(document).ready(function() {
+        //alert('jquery call');
+       //$('div').on('tap', function(event){
+  		//	alert('You touched the element');
+		//});
+		
+    });
+
+</script>
+
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+<div data-role="header">
+    <h1></h1>
+</div><!-- /header -->
+
+<div data-role="content" id='contentDiv'>   
+	<div id='imageLogoDiv'> 
+		<div id='imgSize'>
+			<img src='images/scjobs.png' id='scalaJobzLogo'/><br/>
+			<label id='logoComment' style='text-align:right;margin-left:170px;'>One search, all jobs </label>
+		</div>
+	</div><!-- /imageLogo -->
+	
+	<div id='searchDiv'>
+		<label> <span id='wordFormatting'>What</span> job title, keywords, or company</label><br/>
+		<input type='text' placeholder='Enter Search Keyword' id='searchTextBox'/>
+		
+	<div id='searchButtonDiv'>
+		<input type='submit' value='Find Jobs' onclick='' id='searchbtn'/>
+	</div>
+	</div><!--/searchDiv-->
+    </div><!-- /content -->
+
+<div data-role="footer">
+	
+	
+	<div id='footerDiv'>
+  		<a href='index.html' data-theme="c" data-role="button" data-inline="true" >Back</a> 
+  		<a href='index.html' data-theme="c" data-inline="true" style='margin-left:62%;width:' data-role="button">Job search</a>
+  	
+	</div>
+	
+<!--		<div id='footerDivBack'>
+			<input type='submit' value='Back' onclick='' id='footerBtn-Back'/>
+			</div>
+			<div id='footerDivJobSearch'>
+			<input type='submit' value='Job search' onclick='' id='footerBtn-JobSearch'/>
+			</div> 
+			<a href="index.html" data-role="button" data-inline="true">Cancel</a>
+<a href="index.html" data-role="button" data-inline="true" data-theme="b">Save</a>
+-->
+</div>
+</div><!-- /page -->
+</body>
+</html>
+
